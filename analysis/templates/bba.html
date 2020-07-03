@@ -1,0 +1,712 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Analysis</a></li>
+      <li class="breadcrumb-item"><a href="#">BBA</a></li>    
+    </ol>
+  </nav>
+<div class="position-relative overflow-hidden p-3  m-md-3 text-center bg-light">
+    <div
+        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Başabaş Noktası Analizi </h1>
+
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+
+            </div>
+            <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                <span data-feather="calendar"></span>
+                This week
+            </button>
+        </div>
+    </div>
+    
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Ürün Listesi</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Alımlar</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">BBN</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+  <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-6ic8{border-color:inherit;font-weight:bold;text-align:right;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-lyu2{background-color:#6665cd;border-color:inherit;color:#ffffff;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-6ic8" colspan="5">Sabit Gider Dağıtım Oranı</th>
+    <th class="tg-7btt">OK</th>
+    <th class="tg-7btt">OK</th>
+    <th class="tg-7btt">OK</th>
+    <th class="tg-7btt">OK</th>
+    <th class="tg-7btt">OK</th>
+    <th class="tg-7btt">OK</th>
+    <th class="tg-7btt">OK</th>
+    <th class="tg-7btt">OK</th>
+    <th class="tg-7btt">OK</th>
+    <th class="tg-7btt">OK</th>
+    <th class="tg-7btt">OK</th>
+    <th class="tg-7btt">OK</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-lyu2">NO</td>
+    <td class="tg-lyu2">ÜRÜN KOD</td>
+    <td class="tg-lyu2">ÜRÜN ADI</td>
+    <td class="tg-lyu2">KOD</td>
+    <td class="tg-lyu2">VERİLER</td>
+    <td class="tg-lyu2">OCAK</td>
+    <td class="tg-lyu2">ŞUBAT</td>
+    <td class="tg-lyu2">MART</td>
+    <td class="tg-lyu2">NİSAN</td>
+    <td class="tg-lyu2">MAYIS</td>
+    <td class="tg-lyu2">HAZİRAN</td>
+    <td class="tg-lyu2">TEMMUZ</td>
+    <td class="tg-lyu2">AĞUSTOS</td>
+    <td class="tg-lyu2">EYLÜL</td>
+    <td class="tg-lyu2">EKİM</td>
+    <td class="tg-lyu2">KASIM</td>
+    <td class="tg-lyu2">ARALIK</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">11</td>
+    <td class="tg-0pky">Amazon Referral Fee Rate %</td>
+    <td class="tg-0pky">15.00%</td>
+    <td class="tg-0pky">15.00%</td>
+    <td class="tg-0pky">15.00%</td>
+    <td class="tg-0pky">15.00%</td>
+    <td class="tg-0pky">15.00%</td>
+    <td class="tg-0pky">15.00%</td>
+    <td class="tg-0pky">15.00%</td>
+    <td class="tg-0pky">15.00%</td>
+    <td class="tg-0pky">15.00%</td>
+    <td class="tg-0pky">15.00%</td>
+    <td class="tg-0pky">15.00%</td>
+    <td class="tg-0pky">15.00%</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">12</td>
+    <td class="tg-0pky">Variable Closing Fee</td>
+    <td class="tg-0pky">0.0100</td>
+    <td class="tg-0pky">0.0100</td>
+    <td class="tg-0pky">0.0100</td>
+    <td class="tg-0pky">0.0100</td>
+    <td class="tg-0pky">0.0100</td>
+    <td class="tg-0pky">0.0100</td>
+    <td class="tg-0pky">0.0100</td>
+    <td class="tg-0pky">0.0100</td>
+    <td class="tg-0pky">0.0100</td>
+    <td class="tg-0pky">0.0100</td>
+    <td class="tg-0pky">0.0100</td>
+    <td class="tg-0pky">0.0100</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">13</td>
+    <td class="tg-0pky">Monthly Storage</td>
+    <td class="tg-0pky">0.0200</td>
+    <td class="tg-0pky">0.0200</td>
+    <td class="tg-0pky">0.0200</td>
+    <td class="tg-0pky">0.0200</td>
+    <td class="tg-0pky">0.0200</td>
+    <td class="tg-0pky">0.0200</td>
+    <td class="tg-0pky">0.0200</td>
+    <td class="tg-0pky">0.0200</td>
+    <td class="tg-0pky">0.0200</td>
+    <td class="tg-0pky">0.0200</td>
+    <td class="tg-0pky">0.0200</td>
+    <td class="tg-0pky">0.0200</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">14</td>
+    <td class="tg-0pky">Fulfillment Fee</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">15</td>
+    <td class="tg-0pky">Other</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky"></td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">112</td>
+    <td class="tg-0pky">İade Oranı %</td>
+    <td class="tg-0pky">5%</td>
+    <td class="tg-0pky">5%</td>
+    <td class="tg-0pky">5%</td>
+    <td class="tg-0pky">5%</td>
+    <td class="tg-0pky">5%</td>
+    <td class="tg-0pky">5%</td>
+    <td class="tg-0pky">5%</td>
+    <td class="tg-0pky">5%</td>
+    <td class="tg-0pky">5%</td>
+    <td class="tg-0pky">5%</td>
+    <td class="tg-0pky">5%</td>
+    <td class="tg-0pky">5%</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">1</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">a</td>
+    <td class="tg-0pky">113</td>
+    <td class="tg-0pky">Sabit Gider Dağıtım Oranı</td>
+    <td class="tg-0pky">85.00%</td>
+    <td class="tg-0pky">85.00%</td>
+    <td class="tg-0pky">85.00%</td>
+    <td class="tg-0pky">85.00%</td>
+    <td class="tg-0pky">85.00%</td>
+    <td class="tg-0pky">85.00%</td>
+    <td class="tg-0pky">85.00%</td>
+    <td class="tg-0pky">85.00%</td>
+    <td class="tg-0pky">85.00%</td>
+    <td class="tg-0pky">85.00%</td>
+    <td class="tg-0pky">85.00%</td>
+    <td class="tg-0pky">85.00%</td>
+  </tr>
+</tbody>
+</table>
+  
+  
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+  
+  <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-6kgk{background-color:#6434fc;color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0lax">* Vadeler ay olarak girilecektir. 30 gün vade 1 15 gün vade 1 45 gün vade 2</th>
+    <th class="tg-0lax" colspan="8"></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-6kgk">ÜRÜN ADI</td>
+    <td class="tg-6kgk">AY</td>
+    <td class="tg-6kgk">YIL</td>
+    <td class="tg-6kgk">MİKTAR</td>
+    <td class="tg-6kgk">TUTAR</td>
+    <td class="tg-6kgk">VADE AY OLARAK*</td>
+    <td class="tg-6kgk">ÖDEME AYI</td>
+    <td class="tg-6kgk">ÖDEME YILI</td>
+    <td class="tg-6kgk">KOD</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">b</td>
+    <td class="tg-0lax">3</td>
+    <td class="tg-0lax">2019</td>
+    <td class="tg-0lax">5,000</td>
+    <td class="tg-0lax">5,000</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">4</td>
+    <td class="tg-0lax">2019</td>
+    <td class="tg-0lax">32019</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">6</td>
+    <td class="tg-0lax">2019</td>
+    <td class="tg-0lax">5,000</td>
+    <td class="tg-0lax">8,500</td>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">7</td>
+    <td class="tg-0lax">2019</td>
+    <td class="tg-0lax">62019</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+</tbody>
+</table></div>
+  <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+  
+  <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-6kgk{background-color:#6434fc;color:#ffffff;text-align:left;vertical-align:top}
+.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-0lax{text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-amwm" colspan="5">HATA GÖSTERGESİ (EĞER KIRMIZI İSE HATA VAR HATA RAPORUNA BAK)</th>
+    <th class="tg-amwm">2019</th>
+    <th class="tg-amwm">2019</th>
+    <th class="tg-amwm">2019</th>
+    <th class="tg-amwm">2019</th>
+    <th class="tg-amwm">2019</th>
+    <th class="tg-amwm">2020</th>
+    <th class="tg-amwm">2020</th>
+    <th class="tg-amwm">2020</th>
+    <th class="tg-amwm">2020</th>
+    <th class="tg-amwm">2020</th>
+    <th class="tg-amwm">2020</th>
+    <th class="tg-amwm">2020</th>
+    <th class="tg-amwm">TOPLAM</th>
+    <th class="tg-amwm"></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-6kgk">NO</td>
+    <td class="tg-6kgk">Ürün Kodu</td>
+    <td class="tg-6kgk">Ürün Adı</td>
+    <td class="tg-6kgk">KOD</td>
+    <td class="tg-6kgk">AY=======&gt;</td>
+    <td class="tg-6kgk">August</td>
+    <td class="tg-6kgk">September</td>
+    <td class="tg-6kgk">October</td>
+    <td class="tg-6kgk">November</td>
+    <td class="tg-6kgk">December</td>
+    <td class="tg-6kgk">January</td>
+    <td class="tg-6kgk">February</td>
+    <td class="tg-6kgk">March</td>
+    <td class="tg-6kgk">April</td>
+    <td class="tg-6kgk">May</td>
+    <td class="tg-6kgk">June</td>
+    <td class="tg-6kgk">July</td>
+    <td class="tg-6kgk"></td>
+    <td class="tg-6kgk"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Satış Miktarı</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Satış Fiyatı</td>
+    <td class="tg-0lax">20.00</td>
+    <td class="tg-0lax">20.00</td>
+    <td class="tg-0lax">20.00</td>
+    <td class="tg-0lax">20.00</td>
+    <td class="tg-0lax">20.00</td>
+    <td class="tg-0lax">20.00</td>
+    <td class="tg-0lax">20.00</td>
+    <td class="tg-0lax">20.00</td>
+    <td class="tg-0lax">20.00</td>
+    <td class="tg-0lax">20.00</td>
+    <td class="tg-0lax">20.00</td>
+    <td class="tg-0lax">20.00</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Brüt Gelir</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">Net Kar Oranı Hedefi</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">İade Oranı %</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">15.00%</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Net Gelir</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Ürün Birim Maliyeti</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">11</td>
+    <td class="tg-0lax">Amazon Referral Fee Rate %</td>
+    <td class="tg-0lax">3.0000</td>
+    <td class="tg-0lax">3.0000</td>
+    <td class="tg-0lax">3.0000</td>
+    <td class="tg-0lax">3.0000</td>
+    <td class="tg-0lax">3.0000</td>
+    <td class="tg-0lax">3.0000</td>
+    <td class="tg-0lax">3.0000</td>
+    <td class="tg-0lax">3.0000</td>
+    <td class="tg-0lax">3.0000</td>
+    <td class="tg-0lax">3.0000</td>
+    <td class="tg-0lax">3.0000</td>
+    <td class="tg-0lax">3.0000</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">12</td>
+    <td class="tg-0lax">Variable Closing Fee</td>
+    <td class="tg-0lax">0.0100</td>
+    <td class="tg-0lax">0.0100</td>
+    <td class="tg-0lax">0.0100</td>
+    <td class="tg-0lax">0.0100</td>
+    <td class="tg-0lax">0.0100</td>
+    <td class="tg-0lax">0.0100</td>
+    <td class="tg-0lax">0.0100</td>
+    <td class="tg-0lax">0.0100</td>
+    <td class="tg-0lax">0.0100</td>
+    <td class="tg-0lax">0.0100</td>
+    <td class="tg-0lax">0.0100</td>
+    <td class="tg-0lax">0.0100</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">13</td>
+    <td class="tg-0lax">Monthly Storage</td>
+    <td class="tg-0lax">0.0200</td>
+    <td class="tg-0lax">0.0200</td>
+    <td class="tg-0lax">0.0200</td>
+    <td class="tg-0lax">0.0200</td>
+    <td class="tg-0lax">0.0200</td>
+    <td class="tg-0lax">0.0200</td>
+    <td class="tg-0lax">0.0200</td>
+    <td class="tg-0lax">0.0200</td>
+    <td class="tg-0lax">0.0200</td>
+    <td class="tg-0lax">0.0200</td>
+    <td class="tg-0lax">0.0200</td>
+    <td class="tg-0lax">0.0200</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">14</td>
+    <td class="tg-0lax">Fulfillment Fee</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">15</td>
+    <td class="tg-0lax">Other</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Birim Değişken Gider</td>
+    <td class="tg-0lax">3.0300</td>
+    <td class="tg-0lax">3.0300</td>
+    <td class="tg-0lax">3.0300</td>
+    <td class="tg-0lax">3.0300</td>
+    <td class="tg-0lax">3.0300</td>
+    <td class="tg-0lax">3.0300</td>
+    <td class="tg-0lax">3.0300</td>
+    <td class="tg-0lax">3.0300</td>
+    <td class="tg-0lax">3.0300</td>
+    <td class="tg-0lax">3.0300</td>
+    <td class="tg-0lax">3.0300</td>
+    <td class="tg-0lax">3.0300</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">AMZveOther</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Toplam Değişken Gider</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">113</td>
+    <td class="tg-0lax">Sabit Giderler</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax">-</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Net Kar</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax">0</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">1</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax">a</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax">Net Kar %</td>
+    <td class="tg-0lax">0.00%</td>
+    <td class="tg-0lax">0.00%</td>
+    <td class="tg-0lax">0.00%</td>
+    <td class="tg-0lax">0.00%</td>
+    <td class="tg-0lax">0.00%</td>
+    <td class="tg-0lax">0.00%</td>
+    <td class="tg-0lax">0.00%</td>
+    <td class="tg-0lax">0.00%</td>
+    <td class="tg-0lax">0.00%</td>
+    <td class="tg-0lax">0.00%</td>
+    <td class="tg-0lax">0.00%</td>
+    <td class="tg-0lax">0.00%</td>
+    <td class="tg-0lax"></td>
+    <td class="tg-0lax"></td>
+  </tr>
+</tbody>
+</table></div>
+</div>
+
+ 
+
+    </div>
+
+    {% endblock content %}

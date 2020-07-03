@@ -1,0 +1,40 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Analysis</a></li>
+      <li class="breadcrumb-item"><a href="#">Gittigidiyor</a></li>    
+    </ol>
+  </nav>
+<div class="position-relative overflow-hidden p-3  m-md-3 text-center bg-light">
+    <div
+        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Analysis </h1>
+
+        <div class="btn-toolbar mb-2 mb-md-0">
+            <div class="btn-group mr-2">
+                <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+
+            </div>
+            <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                <span data-feather="calendar"></span>
+                This week
+            </button>
+        </div>
+    </div>
+
+
+    <div class="col-6">
+        {% for n  in tits %}
+        <p>{{ n }}</p>
+
+
+
+
+        {% endfor %}
+
+    </div>
+
+    {% endblock content %}
